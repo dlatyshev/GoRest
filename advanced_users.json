@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "name": "Vasya",
+      "type": "admin",
+      "age": 30,
+      "social": {
+        "vk": "https://vk.com/vasya",
+        "fb": "https://facebook.com/vasya"
+      }
+    },
+    {
+     "name": "Petya",
+      "type": "user",
+      "age": 25,
+      "social": {
+        "vk": "https://vk.com/petya",
+        "fb": "https://facebook.com/petya"
+      }
+    },
+    {
+        "name": "Masha",
+        "type": "user",
+        "age": 28,
+        "social": {
+            "vk": "https://vk.com/masha",
+            "fb": "https://facebook.com/masha"
+        }
+        },
+        {
+        "name": "Sasha",
+        "type": "admin",
+        "age": 35,
+        "social": {
+            "vk": "https://vk.com/sasha",
+            "fb": "https://facebook.com/sasha"
+        }
+        },
+        {
+        "name": "Dasha",
+        "type": "user",
+        "age": 22,
+        "social": {
+            "vk": "https://vk.com/dasha",
+            "fb": "https://facebook.com/dasha"
+        }
+        },
+        {
+        "name": "Vanya",
+        "type": "user",
+        "age": 27,
+        "social": {
+            "vk": "https://vk.com/vanya",
+            "fb": null
+        }
+    }
+  ]
+}
