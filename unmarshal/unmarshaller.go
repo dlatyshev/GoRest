@@ -52,3 +52,25 @@ func ShowUnmarshalExample() {
 		fmt.Println(user)
 	}
 }
+
+func ShowUnstructuredUnmarshalExample() {
+	jsonFile, err := os.Open("advanced_users.json")
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer jsonFile.Close()
+
+	// Unmarshal the JSON data into a slice of User structs
+	var users map[string]interface{}
+	byteValue, err := io.ReadAll(jsonFile)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	err = json.Unmarshal(byteValue, &users)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println(users)
+}
