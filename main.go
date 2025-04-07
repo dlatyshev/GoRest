@@ -1,9 +1,10 @@
 package main
 
-import "github.com/dlatyshev/GoRest/marshaller"
+import "github.com/dlatyshev/GoRest/api"
 
 func main() {
 	//unmarshal.ShowUnmarshalExample()
 	//unmarshal.ShowUnstructuredUnmarshalExample()
-	marshaller.ShowMarshallerExample()
+	//marshaller.ShowMarshallerExample()
+	api.RequestHandler()
 }
