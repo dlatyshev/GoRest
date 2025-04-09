@@ -1,10 +1,7 @@
 package main
 
-import "github.com/dlatyshev/GoRest/api"
+import "github.com/dlatyshev/GoRest/pizzaapi"
 
 func main() {
-	//unmarshal.ShowUnmarshalExample()
-	//unmarshal.ShowUnstructuredUnmarshalExample()
-	//marshaller.ShowMarshallerExample()
-	api.RequestHandler()
+	pizzaapi.Run()
 }
