@@ -45,13 +45,20 @@ func AddBook(book Book) {
 	db = append(db, book)
 }
 
-func UpdateBook(id int, book Book) {
-	for i, b := range db {
-		if b.Id == id {
-			db[i] = book
-			return
+func UpdateBook(id int, updatedBook Book) bool {
+	for i := range db {
+		if db[i].Id == id {
+			// Update the book details directly in the slice
+			db[i].Title = updatedBook.Title
+			db[i].YearPublished = updatedBook.YearPublished
+			// Update Author fields individually, preserving the ID
+			db[i].Author.Name = updatedBook.Author.Name
+			db[i].Author.LastName = updatedBook.Author.LastName
+			db[i].Author.BornYear = updatedBook.Author.BornYear
+			return true // Book found and updated
 		}
 	}
+	return false // Book not found
 }
 
 func DeleteBook(id int) {

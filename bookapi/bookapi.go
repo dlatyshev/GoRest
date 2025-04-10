@@ -37,9 +37,3 @@ func StartServer() {
 	utils.BuildBooksResource(router, booksResourcePrefix)
 	log.Fatal(http.ListenAndServe(":"+port, router))
 }
-
-func GetAllBooks(w http.ResponseWriter, r *http.Request) {
-}
-
-func GetBookById(w http.ResponseWriter, r *http.Request) {
-}
