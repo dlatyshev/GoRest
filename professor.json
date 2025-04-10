@@ -1,0 +1,9 @@
+{
+	"name": "John Doe",
+	"science_id": 12345,
+	"is_working": true,
+	"university": {
+		"name": "Harvard University",
+		"city": "Cambridge"
+	}
+}

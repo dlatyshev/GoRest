@@ -1,7 +1,7 @@
 package main
 
-import "github.com/dlatyshev/GoRest/pizzaapi"
+import "github.com/dlatyshev/GoRest/bookapi"
 
 func main() {
-	pizzaapi.Run()
+	bookapi.StartServer()
 }
